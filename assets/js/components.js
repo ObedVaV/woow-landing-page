@@ -1,4 +1,4 @@
-var tl = new TimelineMax({ delay: 0 });
+var tl = new TimelineMax({ delay: 3 });
 tl.to($('.preloader'), 0.5, { y: '-100vh', borderRadius: '200%', transform: 'scale(2, 1)' }, Power3.fadeOut);
 tl.to($('.page-content'), 0.25, { autoAlpha: 1 });
 tl.staggerFrom($('#h1-1 > div > .text-fade-up'), 0.5, { y: "100%" }, 0.25, Power3.fadeOut);
