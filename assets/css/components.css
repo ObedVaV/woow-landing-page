@@ -1,0 +1,305 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url("Gilroy-Regular.eot");
+  src: url("Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("Gilroy-Regular.woff2") format("woff2"), url("Gilroy-Regular.woff") format("woff"), url("Gilroy-Regular.ttf") format("truetype"), url("Gilroy-Regular.svg#Gilroy-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("Gilroy-Light.eot");
+  src: url("Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("Gilroy-Light.woff2") format("woff2"), url("Gilroy-Light.woff") format("woff"), url("Gilroy-Light.ttf") format("truetype"), url("Gilroy-Light.svg#Gilroy-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("Gilroy-Medium.eot");
+  src: url("Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("Gilroy-Medium.woff2") format("woff2"), url("Gilroy-Medium.woff") format("woff"), url("Gilroy-Medium.ttf") format("truetype"), url("Gilroy-Medium.svg#Gilroy-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("Gilroy-Bold.eot");
+  src: url("Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("Gilroy-Bold.woff2") format("woff2"), url("Gilroy-Bold.woff") format("woff"), url("Gilroy-Bold.ttf") format("truetype"), url("Gilroy-Bold.svg#Gilroy-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-size: 16px;
+  overflow-x: hidden !important;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+.body-container {
+  position: relative;
+  min-height: 100vh !important;
+}
+
+.page-container {
+  padding-bottom: calc(126px + 6rem);
+}
+
+@media (max-width: 991.98px) {
+  .page-container {
+    padding-bottom: calc(212px + 6rem);
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+h1, .text-h1 {
+  font-size: 3rem;
+}
+
+h2, .text-h2 {
+  font-size: 2.25rem;
+}
+
+h3, .text-h3 {
+  font-size: 1.75rem;
+}
+
+h4, .text-h4 {
+  font-size: 1.5rem;
+}
+
+h5, .text-h5 {
+  font-size: 1.375rem;
+}
+
+h6, .text-h6 {
+  font-size: 1.2rem;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin-bottom: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+  positon: relative;
+  overflow: show;
+}
+
+a:not(.btn):hover:after {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  height: 5px;
+  width: 100%;
+  left: 0;
+  bottom: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#EFAB27), to(#DDCC2A));
+  background: linear-gradient(to right, #EFAB27 0%, #DDCC2A 100%);
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-md {
+  font-size: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-xxs {
+  font-size: 0.5rem;
+}
+
+.text-u {
+  text-decoration: underline;
+}
+
+.a-noeffect {
+  text-decoration: none !important;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+.preloader {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100%;
+  background-color: #EDBA29;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.preloader .woow-preloader-lottie {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+  margin: 0;
+  padding: 0;
+}
+
+.page-content {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.text-wrapper div {
+  padding: 0.5rem 0;
+  overflow: hidden;
+}
+
+section#section1, section#section2 {
+  min-height: 100vh;
+}
+
+nav.woow-navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+}
+
+nav.woow-navbar .container ul.menu-list-horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav.woow-navbar .container ul.menu-list-horizontal li {
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  font-weight: 400;
+  display: inline-block;
+  padding: 0;
+}
+
+nav.woow-navbar .container ul.menu-list-horizontal li a:not(.btn) {
+  color: #A6A6A6;
+}
+
+nav.woow-navbar .container ul.menu-list-horizontal li + li {
+  margin-left: 2rem;
+}
+
+#section1 {
+  min-height: calc(100vh - 80px) !important;
+}
+
+#section1 .scroll-icon {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 3rem;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#section1 #h1-1 h1 {
+  white-space: nowrap;
+  width: 100%;
+  font-size: 3.5rem;
+}
+
+@media (max-width: 1199.98px) {
+  #section1 #h1-1 h1 {
+    font-size: calc((35vw - 4.5rem) / 7) !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #section1 #h1-1 h1 {
+    font-size: calc((20vw) + 1rem) !important;
+  }
+}
+
+@media (max-width: 1068px) {
+  #section1 #h1-1 h1 {
+    font-size: calc((20vw - 4.5rem) / 7) !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #section1 #h1-1 h1 {
+    font-size: calc((20vw - 4.5rem) / 7) !important;
+  }
+}
+
+#section1 #iphonex-mockup-1 {
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-48%);
+  transform: translateX(-50%) translateY(-48%);
+  z-index: 2;
+}
+
+#section1 #swiper-iphonex {
+  max-width: 270px;
+  height: 578.58px;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.btn {
+  border: none !important;
+  -webkit-box-shadow: 0 0.125rem 0.25rem 0 transparent !important;
+  box-shadow: 0 0.125rem 0.25rem 0 transparent !important;
+}
+
+.btn.btn-primary-gradient {
+  background-image: -webkit-gradient(linear, left top, right top, from(#EFAB27), to(#DDCC2A));
+  background-image: linear-gradient(to right, #EFAB27, #DDCC2A);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$yellow-dark, endColorstr=$yellow-light, GradientType=1);
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-size: 200% 100%;
+  background-position: left center;
+  -webkit-transition: background 0.35s ease-in-out 0s;
+  -moz-transition: background 0.35s ease-in-out 0s;
+  -ms-transition: background 0.35s ease-in-out 0s;
+  -o-transition: background 0.35s ease-in-out 0s;
+}
+
+.btn.btn-primary-gradient:hover {
+  background-position: right center;
+}
+/*# sourceMappingURL=components.css.map */

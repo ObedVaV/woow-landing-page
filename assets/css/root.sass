@@ -1,0 +1,126 @@
+/////////////////////////////////////////////////////////////////////
+//   After save this file, save "css/bootstrap/gp_bootsrap.sass" too  //
+/////////////////////////////////////////////////////////////////////
+
+// Font
+@font-face 
+  font-family: 'Gilroy'
+  src: url('Gilroy-Regular.eot')
+  src: url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'), url('Gilroy-Regular.woff2') format('woff2'), url('Gilroy-Regular.woff') format('woff'), url('Gilroy-Regular.ttf') format('truetype'), url('Gilroy-Regular.svg#Gilroy-Regular') format('svg')
+  font-weight: 400
+  font-style: normal
+  font-display: swap
+
+@font-face 
+  font-family: 'Gilroy'
+  src: url('Gilroy-Light.eot')
+  src: url('Gilroy-Light.eot?#iefix') format('embedded-opentype'), url('Gilroy-Light.woff2') format('woff2'), url('Gilroy-Light.woff') format('woff'), url('Gilroy-Light.ttf') format('truetype'), url('Gilroy-Light.svg#Gilroy-Light') format('svg')
+  font-weight: 300
+  font-style: normal
+  font-display: swap
+
+
+@font-face 
+  font-family: 'Gilroy'
+  src: url('Gilroy-Medium.eot')
+  src: url('Gilroy-Medium.eot?#iefix') format('embedded-opentype'), url('Gilroy-Medium.woff2') format('woff2'), url('Gilroy-Medium.woff') format('woff'), url('Gilroy-Medium.ttf') format('truetype'), url('Gilroy-Medium.svg#Gilroy-Medium') format('svg')
+  font-weight: 500
+  font-style: normal
+  font-display: swap
+
+@font-face 
+  font-family: 'Gilroy'
+  src: url('Gilroy-Bold.eot')
+  src: url('Gilroy-Bold.eot?#iefix') format('embedded-opentype'), url('Gilroy-Bold.woff2') format('woff2'), url('Gilroy-Bold.woff') format('woff'), url('Gilroy-Bold.ttf') format('truetype'), url('Gilroy-Bold.svg#Gilroy-Bold') format('svg')
+  font-weight: 700
+  font-style: normal
+  font-display: swap
+
+$headings-font-family       : 'Gilroy', sans-serif
+$font-family-base           : 'Gilroy', sans-serif
+
+// Color palette
+$yellow-light               : #DDCC2A
+$yellow-mid                 : #EDBA29
+$yellow-dark                : #EFAB27
+$puerto-rico                : #42CAC6
+$cornflower-blue            : #4964A5
+$mulberry                   : #B74190
+$affair                     : #8C4B99 
+$cinnabar                   : #ED4545
+
+$black                      : #000000
+$superdark-gray             : #121212 
+$dark-gray                  : #A6A6A6 
+$mid-gray                   : #E5E5E5 
+$light-gray                 : #F5F5F5 
+$white                      : #FFFFFF 
+
+// End of Color palette
+
+$colors: ('yellowLight': $yellow-light, 'yellowDark': $yellow-dark, 'puertoRico': $puerto-rico, 'cornflowerBlue': $cornflower-blue, 'mulberry': $mulberry, 'affair': $affair, 'cinnabar': $cinnabar)
+
+$primary                    : $yellow-mid
+$secondary                  : $dark-gray
+// $success                    : 
+// $danger                     : 
+// $info                       : 
+// $warning                    : 
+$light                      : $light-gray
+$dark                       : $superdark-gray
+$transparent                : rgba(0,0,0,0)
+
+// Gray scale
+$white                      : $white
+$gray-100                   : $light-gray
+// $gray-200                   : 
+$gray-300                   : $mid-gray
+// $gray-400                   : 
+$gray-500                   : $dark-gray 
+// $gray-600                   : 
+// $gray-700                   : 
+$gray-800                   : $superdark-gray
+// $gray-900                   : 
+$black                      : $black
+
+// Contrast for auto darker/lighter colors
+$yiq-contrasted-threshold   : 225
+
+// Grid breakpoints
+$xs                         : 0
+$sm                         : 576px
+$md                         : 768px
+$lg                         : 992px
+$xl                         : 1200px
+$xxl                        : 1400px
+
+// Container max-widths
+$mw-sm                      : 540px
+$mw-md                      : 720px
+$mw-lg                      : 960px
+$mw-xl                      : 1140px
+$mw-xxl                     : 1440px
+
+// Body
+$body-bg                    : $gray-100
+$body-color                 : $gray-800
+$font-size                  : 16px
+
+// Borders
+$border-width               : 1px
+$input-btn-focus-width      : 3px
+$border-radius              : 0.25rem
+
+// Font-weights
+$w-light                    : 300
+$w-normal                   : 400
+$w-medium                   : 500
+$w-bold                     : 700
+
+// Only for buttons and badges.
+// • 1:   Normal border-radius
+// • 10:  Ultra rounded border-radius
+$ultra-rounded              : 50
+
+// Box Shadow (small, normal and large)
+$box-shadow                 : 0 0.125rem 0.25rem 0rem rgba($black, 0.15)

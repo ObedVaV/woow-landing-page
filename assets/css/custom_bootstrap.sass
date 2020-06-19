@@ -1,0 +1,93 @@
+/*! Import custom root variables */
+@import "root.sass"
+
+/*! Import Bootstrap 4 variables */
+@import "../vendor/bootstrap/scss/functions"
+@import "../vendor/bootstrap/scss/variables"
+
+$theme-colors               : map-merge($colors, $theme-colors)
+
+$box-shadow-sm              : $box-shadow
+$box-shadow-lg              : $box-shadow
+
+
+$badge-pill-padding-x       : 1em
+$badge-pill-border-radius   : $border-radius * 10
+
+
+$border-radius-lg           : $border-radius
+$border-radius-sm           : $border-radius
+
+$badge-border-radius        : $border-radius * $ultra-rounded
+$badge-padding-y            : 0.25em
+$badge-padding-x            : 1em
+
+
+$sizes                      : map-merge(('0': 0,
+'25'                        : 25%, 
+'30'                        : 30%, 
+'50'                        : 50%, 
+'75'                        : 75%, 
+'100'                       : 100%, 
+'auto'                      : auto, 
+'100px'                     : 100px, 
+'221px'                     : 221px, 
+'343px'                     : 343px),())
+
+$grid-gutter-width          : 2rem
+
+$spacers                    : map-merge(('0': 0,
+'1'                         : ($spacer * 0.25),
+'2'                         : ($spacer * 0.5),
+'3'                         : $spacer,
+'4'                         : ($spacer * 1.5),
+'5'                         : ($spacer * 3),
+'rem5'                      : ($spacer * 0.5),
+'1rem'                      : ($spacer * 1),
+'1rem5'                     : ($spacer * 1.5),
+'2rem'                      : ($spacer * 2),
+'3rem'                      : ($spacer * 3),
+'4rem'                      : ($spacer * 4),
+'5rem'                      : ($spacer * 5),
+'6rem'                      : ($spacer * 6),
+'7rem'                      : ($spacer * 7),
+'8rem'                      : ($spacer * 8),
+'9rem'                      : ($spacer * 9),
+'10rem'                     : ($spacer * 10),
+'15rem'                     : ($spacer * 15),
+'20rem'                     : ($spacer * 20),
+'25p'                       : (25%),
+'50p'                       : (50%),
+'100p'                      : (100%)), ())
+
+
+$grid-breakpoints           : (xs: $xs, sm: $sm, md: $md, lg: $lg, xl: $xl, xxl: $xxl)
+
+$container-max-widths       : (sm: $mw-sm, md: $mw-md, lg: $mw-lg, xl: $mw-xl, xxl: $mw-xxl)
+
+
+$btn-padding-x              : 2rem
+$btn-padding-y              : 1rem
+$btn-line-height            : 0.75rem
+$btn-padding-x-lg           : $btn-padding-x * 2
+$btn-padding-y-lg           : $btn-padding-y
+$btn-border-radius          : $border-radius * $ultra-rounded
+$btn-border-radius-lg       : $border-radius-lg * $ultra-rounded
+$btn-border-radius-sm       : $border-radius-sm * $ultra-rounded
+$btn-font-size              : $font-size-base
+$btn-font-size-lg           : $font-size-base
+$btn-font-size-sm           : $font-size-base
+
+
+// $input-padding-x            : 2rem
+$input-padding-y            : 1rem
+$input-height               : 36px
+
+// $font-weight-lighter        : 
+$font-weight-light          : $w-light
+$font-weight-normal         : $w-normal
+$font-weight-bold           : $w-medium
+$font-weight-bolder         : $w-bold
+
+  
+@import "../vendor/bootstrap/scss/bootstrap"
