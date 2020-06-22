@@ -82,5 +82,5 @@ var stl = gsap.timeline({
 
 stl.from("#section5 > .container > .section-icon-top", 0.5, { autoAlpha: 0, y: "150%" }, Power3.fadeOut)
 stl.from("#section5-text-1 > div > .text-fade-up", 0.5, { autoAlpha: 0, y: "150%" }, Power3.fadeOut)
-stl.to("#logo-woow-navbar > path", 0.5, { fill: "#A6A6A6" }, Power3.fadeOut)
-stl.to(".mobile-menu-icon > span", 0.5, { backgroundColor: "#A6A6A6" }, Power3.fadeOut)
+stl.to("#logo-woow-navbar > path", 0.5, { fill: "#B74190" }, Power3.fadeOut)
+stl.to(".mobile-menu-icon > span", 0.5, { backgroundColor: "#B74190" }, Power3.fadeOut)

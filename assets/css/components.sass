@@ -233,13 +233,14 @@ nav.woow-navbar
     border-radius: 2rem
 
 section 
-  @media(max-width: $lg - 0.02) 
-    min-height: 100vh 
-    &:not(#section1) 
-      display: flex
-      width: 100% 
-      align-items: center
-      justify-content: center
+  &:not(#section6)
+    @media(max-width: $lg - 0.02) 
+      min-height: 100vh 
+      &:not(#section1) 
+        display: flex
+        width: 100% 
+        align-items: center
+        justify-content: center
 
 .btn
   border: none !important
@@ -260,4 +261,26 @@ section
       background-position: right center
 
 
+.parallax-container 
+  background-color: $black
+  position: relative
+  .parallax-wrapper 
+    .img-parallax
+      display: block
+      position: absolute
+      background-image: url("../img/index/parallax.jpg")
+      min-height: 100%
+      width: 100%
+      z-index: 0
+      opacity: 0.8
+      background-position: 50% 25%
+      @media(min-width: $lg)
+        background-attachment: fixed
+        background-position: 0% 80%
+        background-repeat: no-repeat
+        background-size: cover
+  .content-wrapper 
+    position: relative
+    padding: 12rem 0
+    z-index: 99
       

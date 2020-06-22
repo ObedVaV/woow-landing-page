@@ -297,10 +297,10 @@ nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon:hover spa
 }
 
 @media (max-width: 991.98px) {
-  section {
+  section:not(#section6) {
     min-height: 100vh;
   }
-  section:not(#section1) {
+  section:not(#section6):not(#section1) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -336,5 +336,36 @@ nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon:hover spa
 
 .btn.btn-primary-gradient:hover {
   background-position: right center;
+}
+
+.parallax-container {
+  background-color: #000000;
+  position: relative;
+}
+
+.parallax-container .parallax-wrapper .img-parallax {
+  display: block;
+  position: absolute;
+  background-image: url("../img/index/parallax.jpg");
+  min-height: 100%;
+  width: 100%;
+  z-index: 0;
+  opacity: 0.8;
+  background-position: 50% 25%;
+}
+
+@media (min-width: 992px) {
+  .parallax-container .parallax-wrapper .img-parallax {
+    background-attachment: fixed;
+    background-position: 0% 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.parallax-container .content-wrapper {
+  position: relative;
+  padding: 12rem 0;
+  z-index: 99;
 }
 /*# sourceMappingURL=components.css.map */
