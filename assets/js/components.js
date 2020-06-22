@@ -26,7 +26,7 @@ gsap.to("#logo-woow-navbar ", {
     end: "+=100",
     scrub: 1
   },
-  height: "28px"
+  height: "29px"
 });
 
 var stl = gsap.timeline({
