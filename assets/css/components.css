@@ -181,6 +181,14 @@ section#section1, section#section2 {
   min-height: 100vh;
 }
 
+nav.woow-navbar {
+  position: fixed;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  z-index: 5;
+}
+
 nav.woow-navbar .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,7 +199,6 @@ nav.woow-navbar .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem 0;
 }
 
 nav.woow-navbar .container ul.menu-list-horizontal {
@@ -217,8 +224,46 @@ nav.woow-navbar .container ul.menu-list-horizontal li + li {
   margin-left: 2rem;
 }
 
+nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  height: 1.5rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #A6A6A6;
+  -webkit-transition: margin 0.25s ease-in-out 0s;
+  -moz-transition: margin 0.25s ease-in-out 0s;
+  -ms-transition: margin 0.25s ease-in-out 0s;
+  -o-transition: margin 0.25s ease-in-out 0s;
+}
+
+nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon span + span {
+  margin-top: calc(2*10%);
+}
+
+nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon:hover span + span {
+  margin-top: calc(2*4%);
+}
+
 #section1 {
-  min-height: calc(100vh - 80px) !important;
+  min-height: 100vh !important;
 }
 
 #section1 .scroll-icon {
@@ -240,25 +285,8 @@ nav.woow-navbar .container ul.menu-list-horizontal li + li {
 
 @media (max-width: 1199.98px) {
   #section1 #h1-1 h1 {
-    font-size: calc((35vw - 4.5rem) / 7) !important;
-  }
-}
-
-@media (max-width: 991.98px) {
-  #section1 #h1-1 h1 {
-    font-size: calc((20vw) + 1rem) !important;
-  }
-}
-
-@media (max-width: 1068px) {
-  #section1 #h1-1 h1 {
-    font-size: calc((20vw - 4.5rem) / 7) !important;
-  }
-}
-
-@media (max-width: 767.98px) {
-  #section1 #h1-1 h1 {
-    font-size: calc((20vw - 4.5rem) / 7) !important;
+    font-size: 2.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -293,10 +321,10 @@ nav.woow-navbar .container ul.menu-list-horizontal li + li {
   background-repeat: repeat-y;
   background-size: 200% 100%;
   background-position: left center;
-  -webkit-transition: background 0.35s ease-in-out 0s;
-  -moz-transition: background 0.35s ease-in-out 0s;
-  -ms-transition: background 0.35s ease-in-out 0s;
-  -o-transition: background 0.35s ease-in-out 0s;
+  -webkit-transition: background 0.25s ease-in-out 0s;
+  -moz-transition: background 0.25s ease-in-out 0s;
+  -ms-transition: background 0.25s ease-in-out 0s;
+  -o-transition: background 0.25s ease-in-out 0s;
 }
 
 .btn.btn-primary-gradient:hover {

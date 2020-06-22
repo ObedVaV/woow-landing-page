@@ -7,6 +7,7 @@ html
 body
   overflow-x: hidden !important
 
+
 .body-container 
   position: relative
   min-height: 100vh !important
@@ -24,7 +25,7 @@ footer
 // Miscellaneous
 // Para agregar transiciones en SASS: +transition()
 
-=transition($what: all, $time: 0.35s, $method: ease-in-out, $delay: 0s) 
+=transition($what: all, $time: 0.25s, $method: ease-in-out, $delay: 0s) 
   $prefixes: (-webkit-, -moz-, -ms-, -o-, )
   @each $prefix in $prefixes 
     $value: ()
@@ -165,11 +166,15 @@ section
     min-height: 100vh
 
 nav.woow-navbar 
+  position: fixed
+  width: 100%
+  padding-top: 1rem 
+  padding-bottom: 1rem
+  z-index: 5
   .container
     display: flex 
     align-items: center 
     justify-content: space-between
-    padding: 1rem 0
     ul.menu-list-horizontal 
       list-style-type: none 
       margin: 0 
@@ -185,9 +190,31 @@ nav.woow-navbar
           color: $secondary
         &+li 
           margin-left: 2rem
+    .mobile-menu-icon-wrapper 
+        .mobile-menu-icon 
+          display: flex 
+          flex-direction: column
+          justify-content: center
+          align-items: start
+          height: 1.5rem
+          width: 2rem
+          cursor: pointer
+          span 
+            display: block 
+            height: 2px
+            width: 100%
+            background-color: $secondary
+            +transition($what: margin)
+            & + span 
+              margin-top: calc(2*10%)
+          &:hover 
+            span
+              // background-color: $gray-400
+              & + span 
+                margin-top: calc(2*4%)
 
 #section1 
-  min-height: calc(100vh - 80px) !important
+  min-height: 100vh !important
   .scroll-icon 
     position: absolute 
     margin: 0 
@@ -201,14 +228,9 @@ nav.woow-navbar
       white-space: nowrap
       width: 100%
       font-size: 3.5rem
-      @media(max-width: $xl - 0.02)
-        font-size: calc((35vw - 4.5rem) / 7) !important
-      @media(max-width: $lg - 0.02)
-        font-size: calc((20vw) + 1rem) !important
-      @media(max-width: $md + 300)
-        font-size: calc((20vw - 4.5rem) / 7) !important
-      @media(max-width: $md - 0.02)
-        font-size: calc((20vw - 4.5rem) / 7) !important
+      @media(max-width: $xl - 0.02) 
+        font-size: 2.5rem
+        line-height: 2rem
   #iphonex-mockup-1
     position: absolute 
     pointer-events: none
