@@ -161,16 +161,13 @@ a
     padding: 0.5rem 0
     overflow: hidden
 
-section 
-  &#section1, &#section2 
-    min-height: 100vh
-
 nav.woow-navbar 
   position: fixed
   width: 100%
   padding-top: 1rem 
   padding-bottom: 1rem
   z-index: 5
+  background-color: rgba(#fff, 0)
   .container
     display: flex 
     align-items: center 
@@ -223,7 +220,7 @@ nav.woow-navbar
     bottom: 2rem 
     left: 50% 
     +transform(translateX(-50%))
-  #h1-1 
+  #section1-text-1 
     h1 
       white-space: nowrap
       width: 100%
@@ -244,6 +241,14 @@ nav.woow-navbar
     overflow: hidden 
     border-radius: 2rem
 
+section 
+  @media(max-width: $lg - 0.02) 
+    min-height: 100vh 
+    &:not(#section1) 
+      display: flex
+      width: 100% 
+      align-items: center
+      justify-content: center
 
 .btn
   border: none !important
