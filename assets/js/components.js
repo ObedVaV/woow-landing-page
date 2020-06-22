@@ -16,7 +16,7 @@ gsap.to(".woow-navbar", {
     end: "+=100",
     scrub: 1
   },
-  backgroundColor: "#ffffff"
+  backgroundColor: "#fff"
 });
 
 var stl = gsap.timeline({
