@@ -19,6 +19,16 @@ gsap.to(".woow-navbar", {
   backgroundColor: "#fff"
 });
 
+gsap.to("#logo-woow-navbar ", {
+  scrollTrigger: {
+    trigger: "#section1-text-1",
+    start: "top 10%",
+    end: "+=100",
+    scrub: 1
+  },
+  height: "32px"
+});
+
 var stl = gsap.timeline({
   scrollTrigger: {
     trigger: "#section2",
@@ -29,6 +39,8 @@ var stl = gsap.timeline({
 });
 
 stl.from("#section2-text-1 > div > .text-fade-up", 0.5, { autoAlpha: 0, y: "150%" }, Power3.fadeOut)
+stl.to("#logo-woow-navbar > path", 0.5, { fill: "#EDBA29" }, Power3.fadeOut)
+stl.to(".mobile-menu-icon > span", 0.5, { backgroundColor: "#EDBA29" }, Power3.fadeOut)
 
 var stl = gsap.timeline({
   scrollTrigger: {
@@ -40,6 +52,8 @@ var stl = gsap.timeline({
 });
 
 stl.from("#section3-text-1 > div > .text-fade-up", 0.5, { autoAlpha: 0, y: "150%" }, Power3.fadeOut)
+stl.to("#logo-woow-navbar > path", 0.5, { fill: "#42CAC5" }, Power3.fadeOut)
+stl.to(".mobile-menu-icon > span", 0.5, { backgroundColor: "#42CAC5" }, Power3.fadeOut)
 
 var stl = gsap.timeline({
   scrollTrigger: {
@@ -51,6 +65,8 @@ var stl = gsap.timeline({
 });
 
 stl.from("#section4-text-1 > div > .text-fade-up", 0.5, { autoAlpha: 0, y: "150%" }, Power3.fadeOut)
+stl.to("#logo-woow-navbar > path", 0.5, { fill: "#4964A5" }, Power3.fadeOut)
+stl.to(".mobile-menu-icon > span", 0.5, { backgroundColor: "#4964A5" }, Power3.fadeOut)
 
 var stl = gsap.timeline({
   scrollTrigger: {
@@ -62,3 +78,5 @@ var stl = gsap.timeline({
 });
 
 stl.from("#section5-text-1 > div > .text-fade-up", 0.5, { autoAlpha: 0, y: "150%" }, Power3.fadeOut)
+stl.to("#logo-woow-navbar > path", 0.5, { fill: "#A6A6A6" }, Power3.fadeOut)
+stl.to(".mobile-menu-icon > span", 0.5, { backgroundColor: "#A6A6A6" }, Power3.fadeOut)

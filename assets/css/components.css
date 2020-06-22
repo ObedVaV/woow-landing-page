@@ -98,18 +98,6 @@ a {
   overflow: show;
 }
 
-a:not(.btn):hover:after {
-  position: absolute;
-  display: inline-block;
-  content: '';
-  height: 5px;
-  width: 100%;
-  left: 0;
-  bottom: 5px;
-  background: -webkit-gradient(linear, left top, right top, from(#EFAB27), to(#DDCC2A));
-  background: linear-gradient(to right, #EFAB27 0%, #DDCC2A 100%);
-}
-
 .text-lg {
   font-size: 1.125rem;
 }
@@ -196,6 +184,10 @@ nav.woow-navbar .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+nav.woow-navbar .container #logo-woow-navbar {
+  height: 48px;
 }
 
 nav.woow-navbar .container ul.menu-list-horizontal {

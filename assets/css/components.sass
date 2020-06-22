@@ -102,17 +102,6 @@ a
   text-decoration: none !important
   positon: relative
   overflow: show
-  &:not(.btn)
-    &:hover 
-      &:after 
-        position: absolute 
-        display: inline-block 
-        content: '' 
-        height: 5px
-        width: 100% 
-        left: 0
-        bottom: 5px
-        +gradient(to right, $list: ($yellow-dark 0%, $yellow-light 100%))
 
 .text-lg
   font-size: $size-text-lg
@@ -172,6 +161,8 @@ nav.woow-navbar
     display: flex 
     align-items: center 
     justify-content: space-between
+    #logo-woow-navbar 
+      height: 48px
     ul.menu-list-horizontal 
       list-style-type: none 
       margin: 0 
