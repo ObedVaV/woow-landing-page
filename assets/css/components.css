@@ -187,7 +187,7 @@ nav.woow-navbar .container {
 }
 
 nav.woow-navbar .container #logo-woow-navbar {
-  height: 48px;
+  height: 36px;
 }
 
 nav.woow-navbar .container ul.menu-list-horizontal {
@@ -281,8 +281,8 @@ nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon:hover spa
 
 @media (max-width: 767.98px) {
   #section1 #section1-text-1 h1 {
-    font-size: 2rem;
-    line-height: 1.7rem;
+    font-size: 1.75rem;
+    line-height: 1.3rem;
   }
 }
 

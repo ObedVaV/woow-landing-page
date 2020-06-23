@@ -23,10 +23,10 @@ gsap.to("#logo-woow-navbar ", {
   scrollTrigger: {
     trigger: "#section1-text-1",
     start: "top 10%",
-    end: "+=100",
+    end: "+=60",
     scrub: 1
   },
-  height: "29px"
+  height: "24px"
 });
 
 var stl = gsap.timeline({
