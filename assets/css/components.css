@@ -279,6 +279,13 @@ nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon:hover spa
   }
 }
 
+@media (max-width: 767.98px) {
+  #section1 #section1-text-1 h1 {
+    font-size: 2rem;
+    line-height: 1.7rem;
+  }
+}
+
 #section1 #iphonex-mockup-1 {
   position: absolute;
   pointer-events: none;
