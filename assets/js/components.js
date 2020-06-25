@@ -1,5 +1,5 @@
 var tl = new TimelineMax({
-  delay: 3
+  delay: 0
 });
 tl.to($('.woow-preloader-lottie'), 0.15, { autoAlpha: 0 }, Power3.fadeOut);
 tl.to($('.preloader'), 0.5, { y: '-100vh', borderRadius: '200%', transform: 'scale(4, 1)' }, Power3.fadeOut);

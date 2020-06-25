@@ -17,10 +17,6 @@ body
   @media(max-width: $lg - 0.02) 
     padding-bottom: calc(212px + 6rem)
 
-footer 
-  position: absolute 
-  bottom: 0 
-  width: 100% 
 
 // Miscellaneous
 // Para agregar transiciones en SASS: +transition()
@@ -222,18 +218,38 @@ nav.woow-navbar
       @media(max-width: $md - 0.02) 
         font-size: 1.75rem
         line-height: 1.3rem
-  #iphonex-mockup-1
-    position: absolute 
-    pointer-events: none
-    top: 50%
-    left: 50%
-    +transform(translateX(-50%) translateY(-48%))
-    z-index: 2
-  #swiper-iphonex 
-    max-width: 270px
-    height: 578.58px
-    overflow: hidden 
-    border-radius: 2rem
+  #iphone-wrapper
+    background-color: red
+    position: relative
+    max-height: 300px !important
+    #iphonex-mockup-1
+      position: absolute 
+      pointer-events: none
+      top: 50%
+      left: 50%
+      +transform(translateX(-50%) translateY(-48%))
+      z-index: 2
+    #swiper-iphonex 
+      position: relative
+      max-height: 100% !important
+      overflow: hidden 
+      border-radius: 2rem
+      .swiper-wrapper
+        height: auto !important
+        width: auto !important
+        max-width: 100% !important
+        max-height: 100% !important
+        .swiper-slide 
+          position: relative
+          height: auto !important
+          width: auto !important
+          max-width: 100% !important
+          max-height: 100% !important
+          img
+            height: auto !important
+            width: auto !important
+            max-width: 100% !important
+            max-height: 100% !important
 
 section 
   &:not(#section6)
