@@ -13,7 +13,7 @@ tl.staggerFrom($('#section1-text-1 > div > .text-fade-up'), 0.5, { y: "150%" }, 
 tl.from($('#btnDescarga'), 0.75, { autoAlpha: 0, y: "25%" }, "+=0.25", Power3.fadeOut);
 tl.from($('#iphone-wrapper'), 0.75, { autoAlpha: 0, x: "25%" }, "-=0.75", Power3.fadeOut);
 tl.set($('.floating-icon'), { transformOrigin: "50% 50%" })
-tl.staggerFrom($('.floating-icon'), 1.75, { autoAlpha: 0, y: getRandom(100, 600), rotate: getRandom(-90, 90) + 'deg' }, "-=0.5", Power4.fadeOut);
+tl.staggerFrom($('.floating-icon'), 1.75, { autoAlpha: 0, y: getRandom(100, 600), rotate: getRandom(-90, 90) + 'deg' }, "-=1", Power4.fadeOut);
 
 $(document).mousemove(function(event){
   $(".floating-icon").each(function(index, element){
@@ -44,8 +44,8 @@ gsap.to("#logo-woow-navbar ", {
   scrollTrigger: {
     trigger: "#section1-text-1",
     start: "top 10%",
-    end: "+=60",
-    scrub: 1
+    end: "+=100",
+    scrub: true
   },
   height: "24px"
 });
@@ -105,3 +105,15 @@ stl.from("#section5 > .container > .section-icon-top", 0.5, { autoAlpha: 0, y: "
 stl.from("#section5-text-1 > div > .text-fade-up", 0.5, { autoAlpha: 0, y: "150%" }, Power3.fadeOut)
 stl.to("#logo-woow-navbar > path", 0.5, { fill: "#B74190" }, Power3.fadeOut)
 stl.to(".mobile-menu-icon > span", 0.5, { backgroundColor: "#B74190" }, Power3.fadeOut)
+
+var stl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "footer",
+    start: "center 85%",
+    end: "+=200",
+    scrub: 1
+  }
+});
+
+stl.to("#logo-woow-navbar > path", 0.5, { fill: "#A6A6A6" }, Power3.fadeOut)
+stl.to(".mobile-menu-icon > span", 0.5, { backgroundColor: "#A6A6A6" }, Power3.fadeOut)
