@@ -219,9 +219,9 @@ nav.woow-navbar
         font-size: 1.75rem
         line-height: 1.3rem
   #iphone-wrapper
-    background-color: red
-    position: relative
-    max-height: 300px !important
+    +transform(scale(1) !important)
+    @media(max-width: $xxl) 
+      +transform(scale(0.75) !important)
     #iphonex-mockup-1
       position: absolute 
       pointer-events: none
@@ -230,26 +230,10 @@ nav.woow-navbar
       +transform(translateX(-50%) translateY(-48%))
       z-index: 2
     #swiper-iphonex 
-      position: relative
-      max-height: 100% !important
+      max-width: 270px
+      height: 578.58px
       overflow: hidden 
       border-radius: 2rem
-      .swiper-wrapper
-        height: auto !important
-        width: auto !important
-        max-width: 100% !important
-        max-height: 100% !important
-        .swiper-slide 
-          position: relative
-          height: auto !important
-          width: auto !important
-          max-width: 100% !important
-          max-height: 100% !important
-          img
-            height: auto !important
-            width: auto !important
-            max-width: 100% !important
-            max-height: 100% !important
 
 section 
   &:not(#section6)
@@ -302,4 +286,9 @@ section
     position: relative
     padding: 12rem 0
     z-index: 99
-      
+
+footer 
+  #footerSection1 
+    background-color: lighten($superdark-gray, 15) 
+  #footerSection2
+    background-color: $black 

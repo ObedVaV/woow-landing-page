@@ -281,9 +281,15 @@ nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon:hover spa
 }
 
 #section1 #iphone-wrapper {
-  background-color: red;
-  position: relative;
-  max-height: 300px !important;
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+
+@media (max-width: 1440px) {
+  #section1 #iphone-wrapper {
+    -webkit-transform: scale(0.75) !important;
+    transform: scale(0.75) !important;
+  }
 }
 
 #section1 #iphone-wrapper #iphonex-mockup-1 {
@@ -297,32 +303,10 @@ nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon:hover spa
 }
 
 #section1 #iphone-wrapper #swiper-iphonex {
-  position: relative;
-  max-height: 100% !important;
+  max-width: 270px;
+  height: 578.58px;
   overflow: hidden;
   border-radius: 2rem;
-}
-
-#section1 #iphone-wrapper #swiper-iphonex .swiper-wrapper {
-  height: auto !important;
-  width: auto !important;
-  max-width: 100% !important;
-  max-height: 100% !important;
-}
-
-#section1 #iphone-wrapper #swiper-iphonex .swiper-wrapper .swiper-slide {
-  position: relative;
-  height: auto !important;
-  width: auto !important;
-  max-width: 100% !important;
-  max-height: 100% !important;
-}
-
-#section1 #iphone-wrapper #swiper-iphonex .swiper-wrapper .swiper-slide img {
-  height: auto !important;
-  width: auto !important;
-  max-width: 100% !important;
-  max-height: 100% !important;
 }
 
 @media (max-width: 991.98px) {
@@ -396,5 +380,13 @@ nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon:hover spa
   position: relative;
   padding: 12rem 0;
   z-index: 99;
+}
+
+footer #footerSection1 {
+  background-color: #383838;
+}
+
+footer #footerSection2 {
+  background-color: #000000;
 }
 /*# sourceMappingURL=components.css.map */
