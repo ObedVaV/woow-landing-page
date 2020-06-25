@@ -261,7 +261,7 @@ nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon:hover spa
 
 @media (max-width: 992px) {
   #section1 .floating-icons-wrapper {
-    display: none;
+    opacity: 0.5;
   }
 }
 
