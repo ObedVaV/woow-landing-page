@@ -456,7 +456,7 @@ nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon:hover spa
 .parallax-container .content-wrapper {
   position: relative;
   padding: 12rem 0;
-  z-index: 99;
+  z-index: 4;
 }
 
 footer #footerSection1 {
@@ -465,5 +465,95 @@ footer #footerSection1 {
 
 footer #footerSection2 {
   background-color: #000000;
+}
+
+.mobile-menu {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: -100%;
+  left: 0;
+  width: 100% !important;
+  height: 100vh !important;
+  background-color: #EDBA29;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 150%;
+  -webkit-transform: scale(4, 1);
+  transform: scale(4, 1);
+}
+
+.mobile-menu .mobile-menu-icon-wrapper {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  height: auto;
+  width: auto;
+}
+
+.mobile-menu .mobile-menu-icon-wrapper .mobile-menu-icon-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  height: 1.5rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.mobile-menu .mobile-menu-icon-wrapper .mobile-menu-icon-close span {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+}
+
+.mobile-menu .mobile-menu-icon-wrapper .mobile-menu-icon-close span:first-child {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.mobile-menu .mobile-menu-icon-wrapper .mobile-menu-icon-close span:last-child {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.mobile-menu .mobile-menu-content {
+  opacity: 0;
+  visibility: hidden;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: auto;
+  -webkit-transform: translateY(-15%);
+  transform: translateY(-15%);
+}
+
+.mobile-menu .mobile-menu-content ul {
+  text-align: center;
+}
+
+.mobile-menu .mobile-menu-content ul li {
+  padding: 1rem 0;
+  font-size: 2.25rem;
+  color: white;
+}
+
+.mobile-menu .mobile-menu-content ul li a:not(.btn) {
+  color: white;
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=components.css.map */

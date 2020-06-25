@@ -112,12 +112,12 @@
 
         </a>
         <ul class="menu-list-horizontal d-none d-lg-block">
-          <li><a href="#" class="btn btn-sm px-1rem5 btn-primary btn-primary-gradient">Descargar app</a></li>
-          <li><a href="#">FAQ's</a></li>
+          <li><a href="#" class="btn btn-sm px-1rem5 btn-primary btn-primary-gradient">Descarga la app</a></li>
+          <li><a href="#">Preguntas frecuentes</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
         <div class="mobile-menu-icon-wrapper d-lg-none">
-          <div class="mobile-menu-icon" id="#mobileMenuIcon">
+          <div class="mobile-menu-icon" id="#mobileMenuIcon" onClick="openMenu()">
             <span></span>
             <span></span>
             <span></span>
@@ -125,6 +125,37 @@
         </div>
       </div>
     </nav>
+    <div class="mobile-menu">
+      <div class="mobile-menu-icon-wrapper">
+        <div class="mobile-menu-icon-close" onClick="closeMenu()">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="mobile-menu-content">
+        <ul class="list-unstyled">
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Preguntas frecuentes</a></li>
+          <li><a href="">Contacto</a></li>
+          <li>
+            Descarga la app:
+            <br>
+            <div class="row justify-content-center mt-1rem">
+              <div class="col-auto">
+                <a href="#" class="mt-1rem">
+                  <img src="./assets/img/index/app-store.png" alt="" height="48">
+                </a>
+              </div>
+              <div class="col-auto">
+                <a href="#" class="mt-1rem">
+                  <img src="./assets/img/index/play-store.png" alt="" height="48">
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
     <section class="d-flex align-items-center justify-content-center" id="section1">
 
       <!-- Floating icons background -->
@@ -169,6 +200,10 @@
               <div class="swiper-container" id="swiper-iphonex">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide d-flex align-items-center justify-content-center">
+                    <img src="./assets/img/index/iPhone-slide-screen0.png" alt="" class="w-100"
+                      style="max-width: 270px">
+                  </div>
+                  <div class="swiper-slide d-flex align-items-center justify-content-center">
                     <img src="./assets/img/index/iPhone-slide-screen1.png" alt="" class="w-100"
                       style="max-width: 270px">
                   </div>
@@ -178,6 +213,10 @@
                   </div>
                   <div class="swiper-slide d-flex align-items-center justify-content-center">
                     <img src="./assets/img/index/iPhone-slide-screen3.png" alt="" class="w-100"
+                      style="max-width: 270px">
+                  </div>
+                  <div class="swiper-slide d-flex align-items-center justify-content-center">
+                    <img src="./assets/img/index/iPhone-slide-screen4.png" alt="" class="w-100"
                       style="max-width: 270px">
                   </div>
                 </div>
@@ -260,6 +299,7 @@
         </div>
       </div>
     </section>
+
     <section id="section6">
       <div class="parallax-container">
         <div class="parallax-wrapper">
@@ -272,9 +312,18 @@
               Descarga la app en tus dispositivos iOS y Android:
             </h4>
             <br>
-            <a href="#" class="mt-1rem">
-              <img src="./assets/img/index/app-store.png" alt="" width="200">
-            </a>
+            <div class="row justify-content-center">
+              <div class="col-auto">
+                <a href="#" class="mt-1rem">
+                  <img src="./assets/img/index/app-store.png" alt="" height="64">
+                </a>
+              </div>
+              <div class="col-auto">
+                <a href="#" class="mt-1rem">
+                  <img src="./assets/img/index/play-store.png" alt="" height="64">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -289,25 +338,22 @@
             <div class="col-sm-auto mx-auto mx-sm-3rem mx-xl-auto text-center text-sm-left">
               <h5>Explora el sitio</h5>
               <ul class="list-unstyled mt-1rem">
-              <li>
-                  <a href="#" class="text-white">
-                    <i class="mdi mdi-circle text-xs text-primary mr-rem5"></i>
-                    Facebook
+                <li>
+                  <a href="./" class="text-white">
+                    <i class="mdi mdi-circle text-xs text-primary mr-rem5 d-none d-sm-inline-block"></i>
+                    Inicio
                   </a>
-                </li><li>
-                  <a href="#" class="text-white">
-                    <i class="mdi mdi-circle text-xs text-primary mr-rem5"></i>
-                    Facebook
+                </li>
+                <li>
+                  <a href="./faqs.html" class="text-white">
+                    <i class="mdi mdi-circle text-xs text-primary mr-rem5 d-none d-sm-inline-block"></i>
+                    Preguntas frecuentes
                   </a>
-                </li><li>
+                </li>
+                <li>
                   <a href="#" class="text-white">
-                    <i class="mdi mdi-circle text-xs text-primary mr-rem5"></i>
-                    Facebook
-                  </a>
-                </li><li>
-                  <a href="#" class="text-white">
-                    <i class="mdi mdi-circle text-xs text-primary mr-rem5"></i>
-                    Facebook
+                    <i class="mdi mdi-circle text-xs text-primary mr-rem5 d-none d-sm-inline-block"></i>
+                    Términos y condiciones
                   </a>
                 </li>
               </ul>
@@ -317,20 +363,20 @@
               <ul class="list-unstyled mt-1rem">
                 <li>
                   <a href="#" class="text-white">
-                    <i class="mdi mdi-circle text-xs text-primary mr-rem5"></i>
+                    <i class="mdi mdi-circle text-xs text-primary mr-rem5 d-none d-sm-inline-block"></i>
                     Facebook
                   </a>
                 </li>
                 <li>
                   <a href="#" class="text-white">
-                    <i class="mdi mdi-circle text-xs text-primary mr-rem5"></i>
-                    Facebook
+                    <i class="mdi mdi-circle text-xs text-primary mr-rem5 d-none d-sm-inline-block"></i>
+                    Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="text-white">
-                    <i class="mdi mdi-circle text-xs text-primary mr-rem5"></i>
-                    Facebook
+                  <a href="tel:5512345678" class="text-white">
+                    <i class="mdi mdi-circle text-xs text-primary mr-rem5 d-none d-sm-inline-block"></i>
+                    Tel: 55 1234 5678
                   </a>
                 </li>
               </ul>

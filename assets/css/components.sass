@@ -175,27 +175,28 @@ nav.woow-navbar
         &+li 
           margin-left: 2rem
     .mobile-menu-icon-wrapper 
-        .mobile-menu-icon 
-          display: flex 
-          flex-direction: column
-          justify-content: center
-          align-items: start
-          height: 1.5rem
-          width: 2rem
-          cursor: pointer
-          span 
-            display: block 
-            height: 2px
-            width: 100%
-            background-color: $secondary
-            +transition($what: margin)
+      .mobile-menu-icon 
+        display: flex 
+        flex-direction: column
+        justify-content: center
+        align-items: start
+        height: 1.5rem
+        width: 2rem
+        cursor: pointer
+        span 
+          display: block 
+          height: 2px
+          width: 100%
+          background-color: $secondary
+          +transition($what: margin)
+          & + span 
+            margin-top: calc(2*10%)
+        &:hover 
+          span
+            // background-color: $gray-400
             & + span 
-              margin-top: calc(2*10%)
-          &:hover 
-            span
-              // background-color: $gray-400
-              & + span 
-                margin-top: calc(2*4%)
+              margin-top: calc(2*4%)
+          
 
 #section1 
   min-height: 100vh !important
@@ -336,10 +337,64 @@ section
   .content-wrapper 
     position: relative
     padding: 12rem 0
-    z-index: 99
+    z-index: 4
 
 footer 
   #footerSection1 
     background-color: lighten($superdark-gray, 10) 
   #footerSection2
     background-color: $black 
+
+.mobile-menu 
+  position: fixed 
+  display: flex 
+  top: -100% 
+  left: 0
+  width: 100% !important
+  height: 100vh !important
+  background-color: $primary
+  z-index: 99
+  opacity: 0 
+  visibility: hidden
+  border-radius: 150%
+  +transform(scale(4, 1))
+  .mobile-menu-icon-wrapper
+    position: absolute 
+    top: 2rem 
+    right: 1rem
+    height: auto 
+    width: auto
+    .mobile-menu-icon-close 
+      display: flex 
+      flex-direction: column
+      justify-content: center
+      align-items: start
+      height: 1.5rem
+      width: 2rem
+      cursor: pointer
+      span
+        position: absolute
+        height: 2px
+        width: 100%
+        background-color: white
+        &:first-child
+          +transform(rotate(-45deg))
+        &:last-child
+          +transform(rotate(45deg))
+  .mobile-menu-content 
+    opacity: 0 
+    visibility: hidden
+    align-self: center 
+    justify-self: center
+    margin: auto
+    +transform(translateY(-15%))
+    ul 
+      text-align: center
+      li 
+        padding: 1rem 0
+        font-size: $size-text-h2
+        color: white
+        a
+          &:not(.btn)
+            color: white
+            margin-top: 3rem

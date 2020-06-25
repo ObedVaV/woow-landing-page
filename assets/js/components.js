@@ -1,5 +1,5 @@
 var tl = new TimelineMax({
-  delay: 3
+  delay: 0
 });
 
 function getRandom(min, max) {
@@ -108,8 +108,8 @@ stl.to(".mobile-menu-icon > span", 0.5, { backgroundColor: "#B74190" }, Power3.f
 
 var stl = gsap.timeline({
   scrollTrigger: {
-    trigger: "footer",
-    start: "center 85%",
+    trigger: "#section6",
+    start: "top 85%",
     end: "+=200",
     scrub: 1
   }
@@ -117,3 +117,23 @@ var stl = gsap.timeline({
 
 stl.to("#logo-woow-navbar > path", 0.5, { fill: "#A6A6A6" }, Power3.fadeOut)
 stl.to(".mobile-menu-icon > span", 0.5, { backgroundColor: "#A6A6A6" }, Power3.fadeOut)
+
+var tl2 = new TimelineMax({
+  delay: 0,
+  paused: true,
+  reversed: true
+});
+var root = document.documentElement;
+
+tl2.to(".mobile-menu", 0.5, { autoAlpha: 1, borderRadius: 0, top: 0, transform: 'scale(1, 1)' }, Power3.fadeOut)
+tl2.to(".mobile-menu-content", 0.25, { autoAlpha: 1 }, 0.5, Power3.fadeOut)
+
+function openMenu() {
+  tl2.play()
+  $(document.documentElement).css('overflowY', 'hidden');
+}
+
+function closeMenu() {
+  tl2.reverse()
+  $(document.documentElement).css('overflowY', 'visible');
+}
