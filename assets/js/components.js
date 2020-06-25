@@ -1,6 +1,11 @@
 var tl = new TimelineMax({
   delay: 0
 });
+
+function getRandom(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
 tl.to($('.woow-preloader-lottie'), 0.15, { autoAlpha: 0 }, Power3.fadeOut);
 tl.to($('.preloader'), 0.5, { y: '-100vh', borderRadius: '200%', transform: 'scale(4, 1)' }, Power3.fadeOut);
 tl.to($('.page-content'), 0.25, { autoAlpha: 1 });
@@ -8,7 +13,7 @@ tl.staggerFrom($('#section1-text-1 > div > .text-fade-up'), 0.5, { y: "150%" }, 
 tl.from($('#btnDescarga'), 0.75, { autoAlpha: 0, y: "25%" }, "+=0.25", Power3.fadeOut);
 tl.from($('#iphone-wrapper'), 0.75, { autoAlpha: 0, x: "25%" }, "-=0.75", Power3.fadeOut);
 tl.set($('.floating-icon'), { transformOrigin: "50% 50%" })
-tl.staggerFrom($('.floating-icon'), 1.75, { autoAlpha: 0, y: Math.random()*350, rotate: Math.random()*100 + 'deg' }, "-=0.5", Power4.fadeOut);
+tl.staggerFrom($('.floating-icon'), 1.75, { autoAlpha: 0, y: getRandom(100, 600), rotate: getRandom(-90, 90) + 'deg' }, "-=0.5", Power4.fadeOut);
 
 $(document).mousemove(function(event){
   $(".floating-icon").each(function(index, element){

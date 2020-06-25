@@ -261,7 +261,7 @@ nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon:hover spa
 
 @media (max-width: 992px) {
   #section1 .floating-icons-wrapper {
-    opacity: 0.5;
+    display: none;
   }
 }
 
@@ -272,73 +272,73 @@ nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon:hover spa
 }
 
 #section1 .floating-icons-wrapper img#fi-1 {
-  width: 190px;
+  width: 11.2vh;
   top: 30%;
   left: 20%;
 }
 
 #section1 .floating-icons-wrapper img#fi-2 {
-  width: 120px;
+  width: 12.7vh;
   top: 10%;
   left: 45%;
 }
 
 #section1 .floating-icons-wrapper img#fi-3 {
-  width: 180px;
+  width: 13.2vh;
   top: 3%;
   left: 23%;
 }
 
 #section1 .floating-icons-wrapper img#fi-4 {
-  width: 210px;
+  width: 14.9vh;
   top: 54%;
   left: 30%;
 }
 
 #section1 .floating-icons-wrapper img#fi-5 {
-  width: 230px;
+  width: 20.5vh;
   top: 50%;
   left: 90%;
 }
 
 #section1 .floating-icons-wrapper img#fi-6 {
-  width: 190px;
+  width: 11.6vh;
   top: 80%;
   left: 70%;
 }
 
 #section1 .floating-icons-wrapper img#fi-7 {
-  width: 245px;
+  width: 12.3vh;
   top: 80%;
   left: 97%;
 }
 
 #section1 .floating-icons-wrapper img#fi-8 {
-  width: 180px;
+  width: 13.8vh;
   top: 15%;
   left: 3%;
 }
 
 #section1 .floating-icons-wrapper img#fi-9 {
-  width: 220px;
+  width: 20.6vh;
   top: 93%;
   left: 13%;
 }
 
 #section1 .floating-icons-wrapper img#fi-10 {
-  width: 160px;
+  width: 11.3vh;
   top: 50%;
   left: -3%;
 }
 
 #section1 .floating-icons-wrapper img#fi-11 {
-  width: 230px;
+  width: 15.1vh;
   top: 9%;
   left: 83%;
 }
 
 #section1 .floating-icons-wrapper img#fi-12 {
-  width: 80px;
+  width: 11.7vh;
   top: 5%;
   left: 63%;
 }
@@ -435,7 +435,7 @@ nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon:hover spa
 }
 
 .parallax-container {
-  background-color: #000000;
+  background-color: #EDBA29;
   position: relative;
 }
 
@@ -446,7 +446,7 @@ nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon:hover spa
   min-height: 100%;
   width: 100%;
   z-index: 0;
-  opacity: 0.8;
+  opacity: 0.75;
   background-position: 50% 25%;
 }
 
