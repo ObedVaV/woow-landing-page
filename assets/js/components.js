@@ -7,7 +7,23 @@ tl.to($('.page-content'), 0.25, { autoAlpha: 1 });
 tl.staggerFrom($('#section1-text-1 > div > .text-fade-up'), 0.5, { y: "150%" }, 0.25, Power3.fadeOut);
 tl.from($('#btnDescarga'), 0.75, { autoAlpha: 0, y: "25%" }, "+=0.25", Power3.fadeOut);
 tl.from($('#iphone-wrapper'), 0.75, { autoAlpha: 0, x: "25%" }, "-=0.75", Power3.fadeOut);
-tl.from($('#scroll-icon1'), 0.75, { autoAlpha: 0, y: "25%" }, "+=1.25", Power3.fadeOut);
+tl.set($('.floating-icon'), { transformOrigin: "50% 50%" })
+tl.staggerFrom($('.floating-icon'), 1.75, { autoAlpha: 0, y: Math.random()*350, rotate: Math.random()*100 + 'deg' }, "-=0.5", Power4.fadeOut);
+
+$(document).mousemove(function(event){
+  $(".floating-icon").each(function(index, element){
+    var xPos = (event.clientX/$(window).width())-0.5,
+        yPos = (event.clientY/$(window).height())-0.5,
+        box = element;
+  
+  TweenLite.to(box, 1, {
+    x: xPos * -100, 
+    y: yPos * -100,
+    ease: Power1.easeOut,
+  });
+    
+  })  
+});
 
 gsap.to(".woow-navbar", {
   scrollTrigger: {
