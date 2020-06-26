@@ -387,10 +387,10 @@ nav.woow-navbar .container .mobile-menu-icon-wrapper .mobile-menu-icon:hover spa
 }
 
 @media (max-width: 991.98px) {
-  section:not(#section6) {
+  section:not(#section7) {
     min-height: 100vh;
   }
-  section:not(#section6):not(#section1) {
+  section:not(#section7):not(#section1) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -555,5 +555,9 @@ footer #footerSection2 {
 .mobile-menu .mobile-menu-content ul li a:not(.btn) {
   color: white;
   margin-top: 3rem;
+}
+
+i.i-no-m {
+  line-height: 1rem;
 }
 /*# sourceMappingURL=components.css.map */

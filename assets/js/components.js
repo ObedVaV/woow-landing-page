@@ -109,6 +109,20 @@ stl.to(".mobile-menu-icon > span", 0.5, { backgroundColor: "#B74190" }, Power3.f
 var stl = gsap.timeline({
   scrollTrigger: {
     trigger: "#section6",
+    start: "center 85%",
+    end: "+=200",
+    scrub: 1
+  }
+});
+
+stl.from("#section6 > .container > .section-icon-top", 0.5, { autoAlpha: 0, y: "150%" }, Power3.fadeOut)
+stl.from("#section6-text-1 > div > .text-fade-up", 0.5, { autoAlpha: 0, y: "150%" }, Power3.fadeOut)
+stl.to("#logo-woow-navbar > path", 0.5, { fill: "#ED4545" }, Power3.fadeOut)
+stl.to(".mobile-menu-icon > span", 0.5, { backgroundColor: "#ED4545" }, Power3.fadeOut)
+
+var stl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#section7",
     start: "top 85%",
     end: "+=200",
     scrub: 1
