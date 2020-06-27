@@ -1,5 +1,5 @@
 var tl = new TimelineMax({
-  delay: 0
+  delay: 3
 });
 
 function getRandom(min, max) {
